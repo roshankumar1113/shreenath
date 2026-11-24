@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shreenath Das — Facility Coordinator, Dubai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0&display=block" rel="stylesheet">
+<style>
+:root{--bg:#FFF6EA;--bg2:rgba(255,233,208,.72);--card:rgba(255,255,255,.72);--ink:#24140A;--mute:#6F5440;--o:#FF7A1A;--o2:#FFB067;--line:rgba(36,20,10,.12);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#150C06;--bg2:rgba(42,24,9,.7);--card:rgba(43,26,15,.72);--ink:#FFF1E2;--mute:#CBA98C;--line:rgba(255,241,226,.14);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#150C06;--bg2:rgba(42,24,9,.7);--card:rgba(43,26,15,.72);--ink:#FFF1E2;--mute:#CBA98C;--line:rgba(255,241,226,.14);color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{background:var(--bg);scroll-padding-top:env(safe-area-inset-top,0px)}
+body{color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+h1,h2,h3,.disp{font-family:'Bricolage Grotesque','DM Sans',system-ui,sans-serif;line-height:1.02;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+.m{font-family:'Material Symbols Rounded';font-weight:400;font-style:normal;font-size:1.3em;line-height:1;display:inline-block;vertical-align:middle;text-transform:none;letter-spacing:normal;white-space:nowrap;-webkit-font-feature-settings:'liga';font-feature-settings:'liga';visibility:hidden;width:1em;overflow:hidden}
+.fl .m{visibility:visible}
+#gl{position:fixed;inset:0;width:100%;height:100%;z-index:-1}
+#bar{position:fixed;top:0;left:0;height:4px;width:100%;background:linear-gradient(90deg,var(--o),var(--o2));transform:scaleX(0);transform-origin:0 50%;z-index:60}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:3vw;right:3vw;margin-top:10px;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:10px 20px;border-radius:99px;backdrop-filter:blur(16px);background:var(--card);border:1px solid var(--line)}
+nav .logo{font-weight:800;font-size:1.2rem}nav .logo b{color:var(--o)}
+nav ul{display:flex;gap:22px;list-style:none;font-weight:500;font-size:.92rem}nav ul a:hover{color:var(--o)}
+.btn{display:inline-flex;gap:10px;align-items:center;padding:14px 26px;border-radius:99px;font-weight:700;background:var(--o);color:#fff;box-shadow:0 10px 30px -8px var(--o);transition:transform .25s}
+.btn:hover{transform:translateY(-3px) scale(1.03)}.btn.ghost{background:var(--card);color:var(--ink);border:2px solid var(--line);box-shadow:none;backdrop-filter:blur(10px)}
+section{padding:110px 5vw;position:relative}
+.tag{display:inline-flex;gap:8px;align-items:center;font-weight:700;color:var(--o);text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;margin-bottom:14px}
+h2{font-size:clamp(2.2rem,5.5vw,4.4rem);margin-bottom:40px;font-weight:800}
+.glass{background:var(--card);border:1px solid var(--line);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:28px;box-shadow:0 20px 50px -30px rgba(120,50,0,.5)}
+#hero{min-height:100vh;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding-top:130px}
+h1{font-size:clamp(2.8rem,7.4vw,6.4rem);font-weight:800}
+h1 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em}h1 .w span{display:inline-block}h1 em{font-style:normal;color:var(--o)}
+.lead{max-width:580px;color:var(--mute);font-size:1.15rem;margin:26px 0 34px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.scene{perspective:900px;display:grid;place-items:center}
+.photo{position:relative;width:min(100%,380px);aspect-ratio:4/5;border-radius:40px;transform-style:preserve-3d;padding:10px}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 15%;border-radius:32px;display:block;transform:translateZ(30px)}
+.chip{position:absolute;background:var(--card);backdrop-filter:blur(12px);border:1px solid var(--line);padding:10px 16px;border-radius:16px;font-weight:700;font-size:.85rem;display:flex;gap:8px;align-items:center;box-shadow:0 14px 30px -14px rgba(0,0,0,.4);white-space:nowrap}
+.chip .m{color:var(--o)}.c1{top:6%;left:-14%}.c2{top:46%;right:-12%}.c3{bottom:5%;left:-8%}
+.hint{position:absolute;bottom:26px;left:50%;translate:-50% 0;display:flex;flex-direction:column;align-items:center;gap:4px;color:var(--mute);font-size:.8rem;font-weight:700;letter-spacing:.14em}
+.marq{background:var(--o);color:#fff;overflow:hidden;white-space:nowrap;padding:18px 0;transform:rotate(-1.5deg);margin:30px -2vw}
+.marq div{display:inline-block;font-weight:800;font-size:1.5rem;font-family:'Bricolage Grotesque',sans-serif}.marq span{margin:0 22px}
+#about{display:grid;grid-template-columns:1fr 1fr;gap:50px}#about p{color:var(--mute);font-size:1.15rem;margin-bottom:18px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}.stat{padding:26px}
+.stat b{display:block;font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(2.2rem,5vw,3.6rem);color:var(--o);line-height:1}.stat small{color:var(--mute);font-weight:500}
+.ach,.ops,.sk,.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px}.ops{grid-template-columns:repeat(auto-fit,minmax(310px,1fr))}
+.ac,.sc,.op{padding:26px;position:relative;transform-style:preserve-3d}
+.ac b{font:800 3rem 'Bricolage Grotesque',sans-serif;color:var(--o);display:block;line-height:1}.ac h3{margin-top:8px;font-size:1.15rem}.ac p,.sc p{color:var(--mute);font-size:.95rem;margin-top:6px}
+.ac .m,.sc .m{position:absolute;right:20px;top:18px;color:var(--o);font-size:1.9rem}.sc .m{position:static;display:block;margin-bottom:10px}
+.sc h3{font-size:1.2rem}
+.op h3{font-size:1.3rem;display:flex;gap:12px;align-items:center;margin-bottom:14px}.op h3 .m{background:var(--o);color:#fff;border-radius:14px;padding:10px;width:1.9em;height:1.9em;font-size:1.3rem;text-align:center}
+.op li{margin:0 0 8px 18px;color:var(--mute)}
+#xp,#ops{background:var(--bg2);backdrop-filter:blur(6px)}
+.tl{position:relative;padding-left:34px;max-width:900px}.tl:before{content:"";position:absolute;left:8px;top:0;bottom:0;width:3px;background:var(--line)}
+.tl .fill{position:absolute;left:8px;top:0;width:3px;height:100%;background:var(--o);transform:scaleY(0);transform-origin:50% 0}
+.job{position:relative;padding:26px;margin-bottom:24px}.job:before{content:"";position:absolute;left:-34px;top:32px;width:19px;height:19px;border-radius:50%;background:var(--o);border:4px solid var(--bg)}
+.job h3{font-size:1.5rem}.job .at{color:var(--o);font-weight:700}.job .dt{color:var(--mute);font-size:.9rem;margin:2px 0 12px}.job li{margin:0 0 6px 18px;color:var(--mute)}
+.hwrap{overflow:hidden}.hhead{padding:110px 5vw 0}
+.track{display:flex;gap:28px;padding:30px 5vw 110px;width:max-content}
+.pc{width:min(78vw,500px);flex:none;padding:30px;min-height:360px;display:flex;flex-direction:column;position:relative;overflow:hidden;transform-style:preserve-3d}
+.pc:after{content:attr(data-n);position:absolute;right:18px;top:-6px;font:800 7rem 'Bricolage Grotesque',sans-serif;color:var(--o);opacity:.14}
+.pc .ic{width:56px;height:56px;border-radius:18px;background:linear-gradient(135deg,var(--o),var(--o2));color:#fff;display:grid;place-items:center;margin-bottom:20px;transform:translateZ(40px)}
+.pc h3{font-size:1.7rem;margin-bottom:10px;transform:translateZ(25px)}.pc p{color:var(--mute);margin-bottom:auto}
+.pc .meta{margin-top:20px;font-weight:700;color:var(--o);display:flex;gap:8px;align-items:center;font-size:.9rem}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.pills span{padding:9px 16px;border-radius:99px;font-weight:700;font-size:.9rem;display:flex;gap:8px;align-items:center}.pills .m{color:var(--o)}
+#contact{text-align:center;background:linear-gradient(160deg,var(--o),#FF9A3C);color:#fff;border-radius:48px 48px 0 0}
+#contact h2{font-size:clamp(2.6rem,8vw,7rem);margin-bottom:20px}
+#contact .btn{background:#fff;color:#C2500A}.row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+footer{background:#FF9A3C;color:#fff;text-align:center;padding:0 5vw 30px;font-size:.9rem}
+#cur{position:fixed;width:34px;height:34px;border:2px solid var(--o);border-radius:50%;pointer-events:none;z-index:70;top:0;left:0;display:none}
+@media (hover:hover) and (pointer:fine){#cur{display:block}}
+@media (max-width:899px){#hero,#about{grid-template-columns:1fr}nav ul{display:none}.track{flex-direction:column;width:100%;padding-bottom:70px}.pc{width:100%;min-height:0}section{padding:80px 5vw}.hhead{padding-top:80px}.c1{left:0}.c2{right:0}.c3{left:0}.hint{display:none}}
+</style>
+</head>
+<body>
+<canvas id="gl"></canvas><div id="bar"></div><div id="cur"></div>
+<nav><a href="#hero" class="logo disp">shreenath<b>.</b>das</a>
+<ul><li><a href="#about">About</a></li><li><a href="#ach">Wins</a></li><li><a href="#xp">Journey</a></li><li><a href="#ops">What I Do</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#edu">Education</a></li></ul>
+<a href="#contact" class="btn" style="padding:9px 18px"><i class="m">send</i>Hire me</a></nav>
+
+<section id="hero">
+<div>
+<div class="tag"><i class="m">location_on</i>Dubai, UAE · Facility Coordinator</div>
+<h1><span class="w"><span>Keeping</span></span> <span class="w"><span><em>106</em></span></span> <span class="w"><span>properties</span></span> <span class="w"><span>running,</span></span> <span class="w"><span>beautifully.</span></span></h1>
+<p class="lead">I coordinate 400+ work orders a month, lead a 34-member team and turn villas into handover-ready homes across the UAE, Singapore and India.</p>
+<div class="ctas"><a class="btn" href="#projects"><i class="m">arrow_outward</i>See my work</a><a class="btn ghost" href="tel:+971521674188"><i class="m">call</i>+971 52 167 4188</a></div>
+</div>
+<div class="scene"><div class="photo glass tilt" data-tilt>
+<img src="assets/photo.jpg" alt="Shreenath Das">
+<div class="chip c3"><i class="m">apartment</i>CMMS Driven</div></div></div>
+<div class="hint">SCROLL · THE CITY ROTATES<i class="m">keyboard_double_arrow_down</i></div>
+</section>
+
+<div class="marq"><div id="mq"></div></div>
+
+<section id="about">
+<div><div class="tag"><i class="m">person</i>About</div><h2>Technician mindset. Coordinator results.</h2>
+<p>Moved from technician to Facility Coordinator within 9 months of starting in the UAE. I own project tracking, renovations, new-unit handovers and holiday-home readiness for a luxury residential and commercial portfolio.</p>
+<p>I direct a 20-member maintenance team, a 14-member cleaning team and 10+ AMC contractors against SLAs, and keep everything compliant with Dubai Municipality and Dubai Civil Defence.</p></div>
+<div class="stats">
+<div class="stat glass tilt"><b data-n="400" data-s="+">0</b><small>work orders / month</small></div>
+<div class="stat glass tilt"><b data-n="106">0</b><small>properties managed</small></div>
+<div class="stat glass tilt"><b data-n="35" data-s="%">0</b><small>faster PTW approvals</small></div>
+<div class="stat glass tilt"><b data-n="18" data-s="%">0</b><small>less shutdown downtime</small></div>
+<div class="stat glass tilt"><b data-n="99" data-s="%+">0</b><small>equipment uptime</small></div>
+<div class="stat glass tilt"><b data-n="10" data-s="+">0</b><small>AMC contracts run</small></div>
+</div></section>
+
+<section id="ach"><div class="tag"><i class="m">emoji_events</i>Key achievements</div><h2>Results that moved the needle</h2>
+<div class="ach">
+<div class="ac glass tilt"><i class="m">database</i><b>106</b><h3>CMMS &amp; asset log</h3><p>Implemented a CMMS tracking system and asset log covering every unit.</p></div>
+<div class="ac glass tilt"><i class="m">rocket_launch</i><b>9 mo</b><h3>Technician to Coordinator</h3><p>Promoted within 9 months of starting in the UAE.</p></div>
+<div class="ac glass tilt"><i class="m">trending_down</i><b>−35%</b><h3>PTW lead time</h3><p>Helped restructure permit-to-work documentation at Dubai Creek Harbour.</p></div>
+<div class="ac glass tilt"><i class="m">water_drop</i><b>2</b><h3>Pump failures prevented</h3><p>Redesigned Pump House PPM checklists at Tata Steel to catch seal wear early.</p></div>
+<div class="ac glass tilt"><i class="m">timer</i><b>−18%</b><h3>Shutdown downtime</h3><p>Planned a hydraulic hose replacement end to end.</p></div>
+<div class="ac glass tilt"><i class="m">table_chart</i><b>10+</b><h3>AMC contract tracker</h3><p>Built at the GM’s request: one view of contracts and renewals.</p></div>
+<div class="ac glass tilt"><i class="m">bolt</i><b>99%+</b><h3>Equipment uptime</h3><p>As Shift In-Charge, plus zero safety incidents across 3 buildings in Singapore.</p></div>
+<div class="ac glass tilt"><i class="m">checklist</i><b>60 days</b><h3>ENSAFE checklists</h3><p>Permit quick-review checklists adopted department-wide.</p></div>
+</div></section>
+
+<section id="xp"><div class="tag"><i class="m">route</i>Journey</div><h2>Where I’ve worked</h2>
+<div class="tl"><div class="fill"></div>
+<div class="job glass"><h3>Facility Coordinator</h3><div class="at">MFMC Maintenance LLC (Sankari Properties)</div><div class="dt">Dubai · Jul 2026 – Present</div><ul><li>400+ work orders a month tracked to closure against SLA</li><li>Implemented a CMMS and asset log covering every unit</li><li>Built the AMC contract tracker at the GM’s request</li><li>Directing 20 maintenance + 14 cleaning staff and 10+ AMC contractors</li></ul></div>
+<div class="job glass"><h3>Mechanical Technician</h3><div class="at">Emrill Services LLC</div><div class="dt">Dubai · Oct 2025 – Jul 2026</div><ul><li>Maintained the Surreal Water Features at Expo City Dubai</li><li>PPM and reactive work orders within SLA, updated in CAFM</li><li>Supported Dubai Creek Harbour (500,000+ sq ft): zero non-conformances in quarterly KPI audits</li><li>Helped cut PTW approval time by about 35%, liaising daily with 5+ sub-contractors</li></ul></div>
+<div class="job glass"><h3>Assistant Technical – Shift In-Charge</h3><div class="at">Tata Steel Technical Services</div><div class="dt">Meramandali, India · May 2024 – Oct 2025</div><ul><li>Led 8–10 technicians per shift at 99%+ uptime</li><li>Managed the SAP PM work order lifecycle, creation to closure</li><li>Prevented 2 major pump failures with smarter PPM checklists</li><li>Cut shutdown downtime 18%; ENSAFE checklists adopted in 60 days</li></ul></div>
+<div class="job glass"><h3>Technician Intern</h3><div class="at">LAN System Engineering</div><div class="dt">Singapore · Oct 2023 – Apr 2024</div><ul><li>MEP upkeep across 3 commercial buildings under Singapore WSH standards, zero safety incidents</li><li>PPM and safety inspections on electrical panels, HVAC and lighting</li></ul></div>
+</div></section>
+
+<section id="ops"><div class="tag"><i class="m">dashboard</i>What I do</div><h2>My day-to-day at MFMC</h2>
+<div class="ops">
+<div class="op glass tilt"><h3><i class="m">groups</i>Operations &amp; Team</h3><ul><li>400+ work orders across Palm Jumeirah, Jumeirah Islands, Al Barsha, Al Furjan and Mirdif</li><li>Daily tasks for 20 maintenance and 14 cleaning staff, with quality checks</li><li>10+ AMC contracts (HVAC, MEP, pools, landscaping, CCTV), LPO/PO, quotation comparison</li></ul></div>
+<div class="op glass tilt"><h3><i class="m">construction</i>Projects &amp; Renovations</h3><ul><li>Tracking for MEP works and villa/apartment renovations: scope, contractors, snagging, handover</li><li>Progress, cost and open-item reports to the FM Manager, GM and owner</li><li>Holiday-home readiness: repairs, MEP checks, cleaning, final inspections</li></ul></div>
+<div class="op glass tilt"><h3><i class="m">handshake</i>Community &amp; Clients</h3><ul><li>Oak villa community (34 villas) and a 5-villa Mirdif community</li><li>Complaints handled through to closure to retain clients</li></ul></div>
+<div class="op glass tilt"><h3><i class="m">shield</i>Compliance &amp; Assets</h3><ul><li>Dubai Municipality: water tank cleaning, pest control; Dubai Civil Defence fire safety</li><li>NOCs, e-permits, contractor access; PTW and PPE enforced on site</li><li>Al Furjan Elite handover: joint inspection, snag list, asset survey</li></ul></div>
+</div></section>
+
+<section id="projects" style="padding:0"><div class="hwrap" id="hw">
+<div class="hhead"><div class="tag"><i class="m">home_work</i>Projects</div><h2 style="margin-bottom:0">Things I’ve delivered</h2></div>
+<div class="track" id="tr">
+<div class="pc glass tilt" data-n="01"><div class="ic"><i class="m">villa</i></div><h3>Al Barsha 51 Villa</h3><p>Soft renovation and holiday-home conversion, tracked and reported to a 20 Nov 2026 handover.</p><div class="meta"><i class="m">event_available</i>Nov 2026</div></div>
+<div class="pc glass tilt" data-n="02"><div class="ic"><i class="m">beach_access</i></div><h3>Palm Jumeirah Villas</h3><p>Built the Villa 23 (Frond M) renovation tracker for a 13 Dec 2026 completion, and wrote the repair-vs-replace report for a 7-unit, 27 TR AC system at Villa A31.</p><div class="meta"><i class="m">event_available</i>Oct 2026 – present</div></div>
+<div class="pc glass tilt" data-n="03"><div class="ic"><i class="m">forest</i></div><h3>Oak &amp; Mirdif Communities</h3><p>Compiled the Oak renovation completion report (civil, waterproofing, CCTV, landscaping, pool) and manage resident relations across 34 + 5 villas.</p><div class="meta"><i class="m">groups</i>39 villas</div></div>
+<div class="pc glass tilt" data-n="04"><div class="ic"><i class="m">key</i></div><h3>Al Furjan Elite Handover</h3><p>Joint inspection, snag listing and asset survey, with every asset recorded in the CMMS before takeover.</p><div class="meta"><i class="m">fact_check</i>New units</div></div>
+</div></div></section>
+
+<section id="skills"><div class="tag"><i class="m">auto_awesome</i>Skills</div><h2>What’s in my toolbox</h2>
+<div class="sk">
+<div class="sc glass tilt"><i class="m">apartment</i><h3>Facilities Management</h3><p>Hard and soft services, PPM, corrective maintenance, SLA/KPI monitoring, inspections</p></div>
+<div class="sc glass tilt"><i class="m">view_kanban</i><h3>Project Management</h3><p>Task allocation, renovations, MEP upgrades, snagging, joint inspection, reporting</p></div>
+<div class="sc glass tilt"><i class="m">health_and_safety</i><h3>Compliance &amp; HSE</h3><p>DM, DCD, PTW, LOTO, PPE, NOC and e-permits</p></div>
+<div class="sc glass tilt"><i class="m">inventory_2</i><h3>Asset Management</h3><p>CMMS implementation, asset register, asset survey, work history</p></div>
+<div class="sc glass tilt"><i class="m">hvac</i><h3>MEP &amp; Technical</h3><p>HVAC (AHU, ducted, split), pumps, filtration, plumbing, electrical panels, lighting, water features</p></div>
+<div class="sc glass tilt"><i class="m">request_quote</i><h3>Vendor &amp; Contracts</h3><p>AMC, contractor coordination, quotations, LPO/PO, cost comparison, performance tracking</p></div>
+<div class="sc glass tilt"><i class="m">support_agent</i><h3>Client Relations</h3><p>Community management, tenant relations, complaint handling, client retention, holiday-home readiness</p></div>
+</div></section>
+
+<section id="edu" style="background:var(--bg2)"><div class="tag"><i class="m">school</i>Education &amp; tools</div><h2>Trained to fix things properly</h2>
+<div class="edu">
+<div class="sc glass tilt"><i class="m">workspace_premium</i><h3>Advanced Certificate in M&amp;E Services Facility Maintenance</h3><p>World Skill Centre (ITE), Singapore · 2022 – 2023</p></div>
+<div class="sc glass tilt"><i class="m">handyman</i><h3>ITI – Fitter Trade (NCVT)</h3><p>Madhusudan Govt ITI, Cuttack, India · 2020 – 2022</p></div></div>
+<div class="pills"><span class="glass"><i class="m">monitor</i>CMMS / CAFM</span><span class="glass"><i class="m">database</i>SAP PM</span><span class="glass"><i class="m">table_chart</i>MS Excel</span><span class="glass"><i class="m">description</i>Word</span><span class="glass"><i class="m">slideshow</i>PowerPoint</span><span class="glass"><i class="m">mail</i>Outlook</span><span class="glass"><i class="m">translate</i>English · Hindi · Odia</span></div>
+</section>
+
+<section id="contact"><div class="tag" style="color:#fff"><i class="m">mail</i>Let’s talk</div>
+<h2 class="disp">Got a property that needs a steady hand?</h2>
+<div class="row"><a class="btn" href="mailto:shreenath@shreenathdas.com"><i class="m">mail</i>shreenath@shreenathdas.com</a><a class="btn" href="tel:+971521674188"><i class="m">call</i>+971 52 167 4188</a><a class="btn" href="https://www.linkedin.com/in/shreenath-das-54007727b" target="_blank" rel="noopener"><i class="m">link</i>LinkedIn</a></div></section>
+<footer>© 2026 Shreenath Das · English · Hindi · Odia</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+const root=document.documentElement;
+(document.fonts&&document.fonts.load?document.fonts.load('24px "Material Symbols Rounded"','send').catch(()=>{}):Promise.resolve()).then(()=>root.classList.add('fl'));
+setTimeout(()=>root.classList.add('fl'),3500);
+const words=["Facilities Management","MEP Maintenance","CMMS","PPM","AMC","Renovations","Handovers","Compliance"];
+document.getElementById('mq').innerHTML=(words.map(w=>'<span>'+w+'</span><span>✦</span>').join('')).repeat(4);
+let T=0,mx=0,my=0;
+/* ---------- 3D city ---------- */
+try{
+const cv=document.getElementById('gl'),R=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true});
+R.setPixelRatio(Math.min(devicePixelRatio,2));
+const S=new THREE.Scene(),C=new THREE.PerspectiveCamera(55,1,.1,300),G=new THREE.Group();S.add(G);
+const lm=new THREE.LineBasicMaterial({color:0xFF7A1A,transparent:true,opacity:.75}),fm=new THREE.MeshBasicMaterial({color:0xFFB067,transparent:true,opacity:.14});
+let sd=7;const rnd=()=>(sd=(sd*16807)%2147483647)/2147483647;
+const box=(x,z,w,h,d,y=0)=>{const g=new THREE.BoxGeometry(w,h,d),m=new THREE.Mesh(g,fm);m.position.set(x,y+h/2,z);m.add(new THREE.LineSegments(new THREE.EdgesGeometry(g),lm));G.add(m);return m};
+for(let i=-9;i<=9;i++)for(let j=-9;j<=9;j++){if(Math.abs(i)<2&&Math.abs(j)<2)continue;if(rnd()<.35)continue;const d=Math.hypot(i,j),h=1+rnd()*5+Math.max(0,6-d)*.9;box(i*4+(rnd()-.5),j*4+(rnd()-.5),2+rnd()*1.4,h,2+rnd()*1.4)}
+let y=0;[[3.4,9],[2.8,8],[2.2,8],[1.6,7],[1,6]].forEach(([w,h])=>{box(0,0,w,h,w,y);y+=h});
+const sp=new THREE.Mesh(new THREE.ConeGeometry(.45,9,4),fm);sp.position.y=y+4.5;sp.add(new THREE.LineSegments(new THREE.EdgesGeometry(sp.geometry),lm));G.add(sp);
+const gr=new THREE.GridHelper(160,80,0xFF7A1A,0xFFB067);gr.material.transparent=true;gr.material.opacity=.25;G.add(gr);
+const N=500,pa=new Float32Array(N*3);for(let i=0;i<N;i++){pa[i*3]=(rnd()-.5)*90;pa[i*3+1]=rnd()*40;pa[i*3+2]=(rnd()-.5)*90}
+const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pa,3));
+const pts=new THREE.Points(pg,new THREE.PointsMaterial({color:0xFF7A1A,size:.22,transparent:true,opacity:.8}));G.add(pts);
+const ring=new THREE.Mesh(new THREE.TorusGeometry(9,.06,8,96),new THREE.MeshBasicMaterial({color:0xFF7A1A}));ring.rotation.x=Math.PI/2;ring.position.y=14;G.add(ring);
+const ico=new THREE.Mesh(new THREE.IcosahedronGeometry(2.2,1),new THREE.MeshBasicMaterial({color:0xFF7A1A,wireframe:true}));ico.position.set(9,14,0);G.add(ico);
+const rs=()=>{const w=innerWidth,h=innerHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix()};rs();addEventListener('resize',rs);
+addEventListener('pointermove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+const mob=()=>innerWidth<900;
+R.setAnimationLoop(t=>{const a=T*Math.PI*2+.6,rad=(mob()?46:38)-Math.sin(T*Math.PI)*14,h=9+Math.sin(T*Math.PI)*16+(1-T)*4;
+C.position.set(Math.sin(a)*rad+mx*6,h-my*5,Math.cos(a)*rad);C.lookAt(mob()?0:-5*Math.cos(a),12,mob()?0:5*Math.sin(a));
+ring.position.y=14+Math.sin(t/900)*1.2;ring.rotation.z=t/3000;ico.rotation.x=t/1200;ico.rotation.y=t/900;pts.rotation.y=t/20000;R.render(S,C)});
+}catch(e){console.warn('3D unavailable',e)}
+/* ---------- motion ---------- */
+if(window.gsap&&window.ScrollTrigger){
+gsap.registerPlugin(ScrollTrigger);
+try{const L=new Lenis({lerp:.09});L.on('scroll',ScrollTrigger.update);gsap.ticker.add(t=>L.raf(t*1000));gsap.ticker.lagSmoothing(0);
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();L.scrollTo(t)}}))}catch(e){}
+gsap.to({},{scrollTrigger:{start:0,end:'max',scrub:1.2,onUpdate:s=>T=s.progress}});
+gsap.to('#bar',{scaleX:1,ease:'none',scrollTrigger:{scrub:.3,start:0,end:'max'}});
+gsap.from('#hero h1 .w span',{yPercent:115,rotate:7,duration:1.1,stagger:.09,ease:'power4.out',delay:.2});
+gsap.from('#hero .tag,.lead,.ctas,.photo',{opacity:0,y:40,stagger:.12,duration:.9,delay:.6});
+gsap.set('.chip',{z:80});gsap.to('.chip',{y:'+=14',duration:2.2,yoyo:true,repeat:-1,ease:'sine.inOut',stagger:.4});
+gsap.to('#mq',{xPercent:-25,ease:'none',repeat:-1,duration:18});
+gsap.utils.toArray('.stat b').forEach(el=>{const o={v:0},n=+el.dataset.n,s=el.dataset.s||'';gsap.to(o,{v:n,duration:1.8,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 92%'},onUpdate:()=>el.textContent=Math.round(o.v)+s})});
+[['#about .stat','#about'],['#ach .ac','#ach'],['#ops .op','#ops'],['#skills .sc','#skills'],['#edu .sc,.pills span','#edu']].forEach(([s,t])=>gsap.from(s,{opacity:0,y:60,rotateX:-20,scale:.92,stagger:.08,duration:.8,scrollTrigger:{trigger:t,start:'top 70%'}}));
+gsap.utils.toArray('h2').forEach(el=>gsap.from(el,{opacity:0,y:50,duration:.9,scrollTrigger:{trigger:el,start:'top 88%'}}));
+gsap.to('.tl .fill',{scaleY:1,ease:'none',scrollTrigger:{trigger:'.tl',start:'top 60%',end:'bottom 70%',scrub:true}});
+gsap.utils.toArray('.job').forEach((j,i)=>gsap.from(j,{opacity:0,x:i%2?70:-70,rotateY:i%2?-12:12,duration:.9,scrollTrigger:{trigger:j,start:'top 85%'}}));
+const mm=gsap.matchMedia();
+mm.add('(min-width:900px)',()=>{const tr=document.getElementById('tr');gsap.to(tr,{x:()=>-(tr.scrollWidth-innerWidth),ease:'none',scrollTrigger:{trigger:'#hw',pin:true,scrub:1,end:()=>'+='+(tr.scrollWidth-innerWidth),invalidateOnRefresh:true}})});
+mm.add('(max-width:899px)',()=>{gsap.utils.toArray('.pc').forEach(c=>gsap.from(c,{opacity:0,y:50,duration:.7,scrollTrigger:{trigger:c,start:'top 88%'}}))});
+const cur=document.getElementById('cur'),xs=gsap.quickTo(cur,'x',{duration:.25}),ys=gsap.quickTo(cur,'y',{duration:.25});
+addEventListener('mousemove',e=>{xs(e.clientX-17);ys(e.clientY-17)});
+document.querySelectorAll('a,.tilt').forEach(a=>{a.addEventListener('mouseenter',()=>gsap.to(cur,{scale:1.8,background:'rgba(255,122,26,.18)',duration:.25}));a.addEventListener('mouseleave',()=>gsap.to(cur,{scale:1,background:'transparent',duration:.25}))});
+}
+try{if(matchMedia('(hover:hover)').matches)VanillaTilt.init(document.querySelectorAll('.tilt'),{max:10,speed:500,glare:true,'max-glare':.22,scale:1.02,perspective:900})}catch(e){}
+</script>
+</body>
+</html>
